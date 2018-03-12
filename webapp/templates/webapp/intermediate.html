@@ -1,0 +1,84 @@
+{% extends 'webapp/homepage.html' %}
+{% block title %}<title>Intermediate</title>{% endblock %}
+{% block body_block %}
+{% load static %}
+
+    <div >
+      <img width="100%" height="600" src="{% static 'webapp/img/binary_vortex.png' %}"/>
+        <div style="position: absolute; width:auto; top:275px; background-color:grey; background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+        background: rgba(204, 204, 204, 0.5); padding: 20px;">
+          <div>
+            <h1 style="text-align:center; font-weight:bold; color:black;" class="display-3"><b>Intermediate Course</b></h1>
+            <p style="text-align:center;"><a class="btn btn-primary btn-lg" href="/webapp/contact/" role="button">Sign up for a free evaluation class &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+
+  <section>
+    <!--overview of course -->
+    <div class="container begin-p">
+      <div class="row">
+        <div class="col-9">
+      <h3>Take game development to the next level!</h3>
+      <br>
+      <h4>
+        Recommended Age: 14+
+      </h4>
+      <br>
+      <p>
+        This course is for older students who have some experience with a dynamically typed programming language
+        and good typing skills.
+      </p>
+      <p>
+        The intermediate course build on the concepts learned in the novice course.  The Intermediate course focus'
+        on using computational thinking to solve programming challenges.  We will develop more complex games with a
+        focus on game physics, basic Artificial Intelligence (Enemy AI), object oriented design, data structures,
+        and linear algebra.
+      </p>
+
+        </div>
+        <div style="background: #F0FFF0; font-size:.75em;" class="col-3">
+          <br>
+          <h3>Our Guarantee</h3>
+          <br>
+          <i class="fas fa-graduation-cap"></i><b>  4 To 1 Ratio</b>
+          <p>To ensure our students receive the best results, each class has a maximum of 4 students for each instructor.</p>
+          <br><br>
+          <i class="fas fa-child"></i> <b>  FREE Evaluation Class</b>
+          <p>We judge our success based on your child's success. Our free evaluation helps us recommend the right course
+          that builds your child's confidence.</p>
+          <br><br>
+          <i class="fas fa-handshake"></i> <b>  2 Class Guarantee</b>
+          <p>We are confident your child will learn and have fun! That's why we offer a full refund if you wish to
+          withdraw your child from the course after the second class.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <!-- example video -->
+    <div class="container begin-p">
+      <h4 style="font-size:1.5em;">Magic Show</h4>
+      <p>
+        Magic Show is the first game our students learn. This game teaches our students the fundementals.
+        This game uses variable assignment, loops, linear math, and condition statements.
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9uk8zATVRK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <div class="container begin-p">
+      <h4 style="font-size:1.5em;">Super Felix</h4>
+      <p>
+        Super Felix is a game that build on the concepts used to create Magic Show. Students will learn more creative ways
+        to using the basic concepts learned when creating the Magic Show.
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qcBaqKGnCEI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></iframe>
+    </div>
+
+    <br>
+  </section>
+
+{% endblock %}

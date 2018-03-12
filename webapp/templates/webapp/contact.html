@@ -1,0 +1,104 @@
+{% extends 'webapp/homepage.html' %}
+{% block title %}<title>Contact</title> {% endblock %}
+{% block body_block %}
+    <style>
+        p{
+            font-size:1.5em;
+        }
+
+        h1{
+            font-size:2em;
+        }
+    </style>
+    <br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <br>
+                <h2> Give your child the best opportunity for success!</h2>
+                <hr>
+                <h5>Call us at 1-800-555-5555 or fill out this quick form to start your child's learning experience.
+                We'll contact you shortly to discuss your needs and how we can help achieve
+                your goals.</h5>
+            </div>
+
+        <div class="col-5 border border-primary">
+          <div>
+            <p style="text-align:center;"><a style="font-size:2em; color:blue; " name="evaluation">Contact Us</a></p>
+              <hr>
+          </div>
+        <form action="{%url 'registration'%}" method="post">
+            {% csrf_token %}
+            <label>Email:</label>
+            <br>
+            {{ form.email }} <label>cc:</label>
+            {{ form.cc_myself}} <br>
+
+            <label>Name:</label>
+            <br>
+            {{ form.name }}<br>
+
+            <label>Phone:</label>
+            <br>
+            {{ form.phone }} <br>
+
+            <label>Location:</label>
+            <br>
+            {{ form.location }} <br>
+
+            <label>Status:</label>
+            <br>
+            {{ form.status }} <br>
+
+            <label>Age:</label>
+            <br>
+            {{ form.age }} <br>
+
+            <label>Questions/Comments:</label>
+            <br>
+            {{ form.questions }} <br>
+
+            <input class="btn btn-info btn-block" type="submit" value="Let's Start Coding"/>
+        </form>
+        </div>
+             <div style="background: #F0FFF0; font-size:.75em;" class="col-3">
+          <br>
+          <h3>Our Guarantee</h3>
+          <br>
+          <i class="fas fa-graduation-cap"></i><b>  4 To 1 Ratio</b>
+          <p>To ensure our students receive the best results, each class has a maximum of 4 students for each instructor.</p>
+          <br><br>
+          <i class="fas fa-child"></i> <b>  FREE Evaluation Class</b>
+          <p>We judge our success based on your child's success. Our free evaluation helps us recommend the right course
+          that builds your child's confidence.</p>
+          <br><br>
+          <i class="fas fa-handshake"></i> <b>  2 Class Guarantee</b>
+          <p>We are confident your child will learn and have fun! That's why we offer a full refund if you wish to
+          withdraw your child from the course after the second class.</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <i class="fas fa-graduation-cap glyphs"></i><h1 style="font-size:2em;">4 To 1 Ratio</h1>
+              <p>To ensure our students receive the best results, each class has a maximum of 4 students for each instructor.</p>
+            </div>
+            <div class="col">
+            <i class="fas fa-child glyphs"></i> <b>  FREE Evaluation Class</b>
+              <p>We judge our success based on your child's success. Our free evaluation helps us recommend the right course
+              that builds your child's confidence.</p>
+            </div>
+            <div class="col">
+              <i class="fas fa-handshake glyphs"></i> <b>  2 Class Guarantee</b>
+              <p>We are confident your child will learn and have fun! That's why we offer a full refund if you wish to
+              withdraw your child from the course after the second class.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+{% endblock %}

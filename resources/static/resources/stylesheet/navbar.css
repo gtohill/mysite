@@ -1,0 +1,19 @@
+.spacing{
+    padding-left:1em;
+}
+.hd-fnt-sz{
+    font-size:1.25em
+}
+
+body {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.nav-right{
+    position:relative;
+    left:2em;
+}

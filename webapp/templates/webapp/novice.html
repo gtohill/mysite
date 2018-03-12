@@ -1,0 +1,94 @@
+{% extends 'webapp/homepage.html' %}
+{%block title %} <title>Novice</title> {% endblock %}
+{% block body_block %}
+{% load static %}
+
+
+
+
+<main role="main">
+  <div>
+    <img width="100%" height="800" src="{% static 'webapp/img/novice.jpeg' %}"/>
+      <div style="margin:auto;width:50%;position:relative; top:-300px; background-color:grey; background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+      background: rgba(204, 204, 204, 0.5); padding: 20px;">
+        <div>
+          <h1 style="text-align:center; font-weight:bold; color:black;" class="display-3"><b>Novice Course</b></h1>
+          <p style="text-align:center;"><a class="btn btn-primary btn-lg" href="/webapp/contact/" role="button">Start Developing!</a></p>
+        </div>
+      </div>
+    </div>
+
+
+  <section>
+    <!--overview of course -->
+    <div style="position:relative; top:-100px;" class="container begin-p">
+      <div class="row">
+        <div class="col-9">
+      <h3>Learn to create fun and interactive video games using Scratch!</h3>
+      <br>
+      <h4>
+        <b>Core Concepts</b>: variable assignment, loops, cartesian coordinates, math (linear and algebra), conditional statements, logic.
+      </h4>
+      <br>
+      <p>
+        <b>Python is the ideal language to learn for first time coders</b>.
+      </p>
+      <p>
+        This course is for students who have completed our Beginners Course (Scratch) or have some experience with basic
+        programming concepts like, loops, conditional statements, variable assignments, functions, and methods.
+      </p>
+      <p>
+        The Python programming language was created in 1991 by Guido van Rossum. Python is used by YouTube, Google,
+        NASA, CERN, Industrial Light & Magic, and Firaxis Games. As of 2017, Python is rated the fourth most popular
+        programming language.
+      </p>
+      <p>
+        Python is used for website development, scientific computing, and artificial intelligence.  It is considered the
+        easiest language to learn for first time programmers. Python was designed to be easily readable and uses
+        English keywords.
+      </p>
+
+      <p>
+        In the Novice course, students will create a real functioning game using Python + Pygame. The focus of this
+        course is to teach students more complex uses of loops, conditional statements, functions, methods, and
+        algorithms. Students will be introduced to object-oriented design, encapsulation, decomposition, and
+        inheritance.
+      </p>
+        </div>
+        <div style="background: #F0FFF0; font-size:.75em;" class="col-3">
+          <br>
+          <h3>Our Guarantee</h3>
+          <br>
+          <i class="fas fa-graduation-cap"></i><b>  4 To 1 Ratio</b>
+          <p>To ensure our students receive the best results, each class has a maximum of 4 students for each instructor.</p>
+          <br><br>
+          <i class="fas fa-child"></i> <b>  FREE Evaluation Class</b>
+          <p>We judge our success based on your child's success. Our free evaluation helps us recommend the right course
+          that builds your child's confidence.</p>
+          <br><br>
+          <i class="fas fa-handshake"></i> <b>  2 Class Guarantee</b>
+          <p>We are confident your child will learn and have fun! That's why we offer a full refund if you wish to
+          withdraw your child from the course after the second class.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <!-- example video -->
+    <div class="container begin-p">
+      <h4 style="font-size:1.5em;">Course Progression</h4>
+      <p>
+        Our novice course is designed to teach our students the basics of computer programming. Each student learns
+        the basic coding skills firsts, then we dive into the world of game development. The video below is a quick
+        overview of this outstanding introductory course.
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MHdOoojgywE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <br><br>
+
+    <br>
+  </section>
+</main>
+
+{% endblock %}

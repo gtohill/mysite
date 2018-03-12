@@ -1,0 +1,89 @@
+{% extends 'webapp/homepage.html' %}
+}<title>Parents</title>
+{% block body_block %}
+{% load static %}
+
+<main role="main"></main>
+
+    <div>
+      <img width="100%" src="{% static 'webapp/img/banner1.jpg' %}"/>
+      <div style="position: absolute;width:100%; top: 200px; background-color:grey; background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+      background: rgba(204, 204, 204, 0.5); padding: 20px;">
+        <div>
+          <h1 style="text-align:center; font-weight:bold; color:gold;" class="display-3"><b>Learn. Create. Code. Fun!</b></h1>
+          <p style="text-align:center;"><a class="btn btn-primary btn-lg" href="/webapp/contact" role="button">Sign up for a free evaluation class &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+     <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Coding is not only fun! <span class="text-muted">It's critical to learn</span></h2>
+            <p class="lead">Research has demonstrated that learning to code at a young age helps develop
+              analytical thinking and fosters problem-solving techniques — skills that are important in order
+              to advance in science, technology, engineering and math, and that are becoming increasingly
+              in-demand for the job market.
+            </p>
+            <p class="lead">
+              Our courses encourage creativity, logical thinking, and having fun!
+              The foundation of our courses is not coding, it's teaching your child how to think about solutions to a
+              problem.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/KidW_Lightbulb-600x462.jpg' %}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Problem Solving <span class="text-muted">Computational thinking for a modern world</span></h2>
+            <p class="lead">Computational thinking benefits all STEM disciplines. Each course develops your childs problem
+              solving abilities. The core concepts of computational thinking are:  </p>
+            <ul style="list-style-type:none">
+
+              <li class="lead"><i class="fab fa-medapps"></i> Algorithmic thinking - developing a set of instructions or sequence of steps to solve a problem</li>
+              <li class="lead"><i class="fab fa-medapps"></i> Evaluation - ensuring a solution is fit-for-purpose</li>
+              <li class="lead"><i class="fab fa-medapps"></i> Decomposition - breaking a problem down into its component parts</li>
+              <li class="lead"><i class="fab fa-medapps"></i> Abstraction - hiding detail or removing complexity without losing the important detail required to solve a problem</li>
+              <li class="lead"><i class="fab fa-medapps"></i> Generalization - finding a general approach to a set of problems. </li>
+            </ul>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/comp1.jpeg' %}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">An advantage that lasts a lifetime. <span class="text-muted"></span></h2>
+            <p class="lead">Computational thinking is not coding or programing. It is the first step to translating a
+              real-world problem into a problem a computer can understand.  All our courses teach our students this
+              fundamental skill. Given the speed of computers, integrating computational thinking with any discipline
+              offers your child a significant advantage.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/grad1.jpeg' %}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+  </main>
+{% endblock %}

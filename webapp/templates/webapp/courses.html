@@ -1,0 +1,107 @@
+{% extends 'webapp/homepage.html' %}
+{% block title %}<title>Courses</title>{% endblock %}
+{% block body_block %}
+{% load static %}
+
+  <div>
+    <img width="100%" height="800" src="{% static 'webapp/img/banner_course1.png' %}"/>
+    <div style="position: absolute;width:100%; top:550px; background-color:grey; background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5); padding: 20px;">
+      <div>
+        <h1 style="text-align:center; font-weight:bold; color:gold;" class="display-3"><b>Learn. Create. Code. Fun!</b></h1>
+        <p style="text-align:center;"><a class="btn btn-primary btn-lg" href="/webapp/contact/" role="button">Sign up for a free evaluation class &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container">
+        <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Beginner</h2>
+        <p>Want to create a video game with a hero that can soar through the clouds while dodging dragons?
+          Or, maybe, you enjoy magic! So, we'll teach you to create a magic show for your friends and family to enjoy.
+        </p>
+        <p>
+          Our beginners program is perfect for children ages 8+. Kids will learn to combine their creativity with
+          basic computer programming skills to make a fun video game!
+        </p>
+        <p><a class="btn btn-secondary" href="/webapp/beginner/" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Novice</h2>
+        <p>
+          Our Novice course is ideal for students who are ages 12-15 or who have completed the <b>Beginner</b> course.
+          Students must have good typing skills, basic understanding of variable assignment, conditional loops,
+          and conditional (if/then) statements.
+        </p>
+        <p>
+          In this course, students will learn the foundations of computer game design, then create a video game.
+          Students will learning to implement programming concepts, such as basic algorithms, classes, functions,
+          methods, and arrays into their game.
+        </p>
+
+        <p><a class="btn btn-secondary" href="/webapp/novice/" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Intermediate</h2>
+        <p>
+          This course puts the "Science" in Computer Science. It will introduce students to the core concepts taught
+          during the first year of university
+        </p>
+        <p>
+          Our intermediate course is designed for older students who want to apply more advanced mathematical
+          concepts while learning pre-University computer science algorithms. Students will create a more complex and
+          efficient video game using advanced mathematics, object oriented design, and basic data structures.
+          This course is perfect for high school students interested pursuing a minor, major, or specialization Degree
+          in Computer Science.
+        </p>
+
+        <p>
+          The development environment for this course is Python or Java.
+        </p>
+        <p><a class="btn btn-secondary" href="/webapp/intermediate/" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+  </div> <!-- /container -->
+
+    <div style="background-color:#ccffcc" class="container">
+      <hr>
+      <h5 style="text-align:center;">
+        If you are not sure which course is right for you... no need to worry... we'll help you find the right course.
+        <b>We offer a free, in-person, evaluation</b>.
+        Please <a href="/webapp/contact/">contact us to schedule a quick evaluation.</a>
+      </h5>
+      <hr>
+    </div> <!-- /container -->
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2 style="text-align:center;">Raspberry Pi: Internet of Things (IoT)</h2>
+            <p> By the year 2020, at least 20 billion devices will be connected to the internet.
+              The Raspberry Pi isn't just a great platform for building Internet of Things project:
+              It's a super platform for learning about the IoT.
+              Using Raspberry PI, our students learn to control other
+              devices and simple robotics.
+            </p>
+            <p><a class="btn btn-secondary" href="/webapp/rasppi/" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Website Design</h2>
+            <p>
+              Want to build a custom website? This course is perfect for students who are beginner to novice.
+            In this course you will learn to build a website using HTML5 and CSS3 with Bootstrap and JavaScript.
+            <p>
+              The focus of this course is to teach students how to use JavaScript to create dynamic web content.
+            </p>
+            <p><a class="btn btn-secondary" href="/webapp/webdesign/" role="button">View details &raquo;</a></p>
+          </div>
+
+        </div>
+        <hr>
+      </div> <!-- /container -->
+
+{% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'resources/resources.html' %}
+{% block title %}<title>London</title> {% endblock %}
+{% block body_block %}
+
+
+<!-- location details -->>
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=London+Public+Library,+Masonville+Branch,+North+Centre+Road,+London,+ON,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlecode" rel="nofollow" href="https://sucks.hosting" id="grabmap-authorization">Hosting Sucks</a><style>#embedmap-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+            </div>
+            <div class="col">
+                <h4>Masonville Public Library</h4>
+                <h5>30 North Centre Rd</h5>
+                <h5>London, ON, N5X 3W1</h5>
+                <a class="nav-link hd-fnt-sz"><i class="fas fa-phone"></i>   <b style="font-size:1em;">1-800-555-5555</b></a>
+                <a class="nav-link hd-fnt-sz" href="/webapp/contact"><i class="fas fa-envelope"></i>   <b style="font-size:1em;">Email Us</b></a>
+            </div>
+        </div>
+  </div>
+      <br>
+  <div class="container">
+    <h2>Courses Offered</h2>
+
+    <table class="table">
+        <h5>Beginners Course</h5>
+        <thead>
+          <tr>
+            <th>Course Description</th>
+            <th>Days/Time</th>
+            <th>Class Length per week</th>
+            <th>Weeks</th>
+            <th>Total Fee</th>
+            <th>Cost Per Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Guided by our instructors, students will not only create a real functioning game from "Scratch", they'll practice the fundamental coding concepts required in any language, learn how to think logically, and have fun while doing it. <a href="{% url 'beginner' %}">learn more...</a></td>
+            <td>Thursdays (3:30pm-7pm) and Saturdays (9am-3pm) </td>
+            <td>80 minutes </td>
+            <td>18</td>
+            <td>$360</td>
+            <td>$20</td>
+          </tr>
+        </tbody>
+    </table>
+      <br>
+      <table class="table">
+        <h5>Novice</h5>
+        <thead>
+          <tr>
+            <th>Course Description</th>
+            <th>Days/Time</th>
+            <th>Class Length per week</th>
+            <th>Weeks</th>
+            <th>Total Fee</th>
+            <th>Cost Per Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>In the Novice course, students will create a real functioning game using Python. The focus of this course is to teach students more complex uses of loops, conditional statements, functions, methods, and algorithms. Students will be introduced to object-oriented design, encapsulation, decomposition, and inheritance.  <a href="{% url 'novice' %}">learn more...</a></td>
+            <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
+            <td>80 minutes </td>
+            <td>18</td>
+            <td>$504</td>
+            <td>$28</td>
+          </tr>
+        </tbody>
+    </table>
+            <br>
+  <table class="table">
+    <h5>Intermediate</h5>
+    <thead>
+      <tr>
+        <th>Course Description</th>
+        <th>Days/Time</th>
+        <th>Class Length per week</th>
+        <th>Weeks</th>
+        <th>Total Fee</th>
+        <th>Cost Per Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>In the Intermediate course, students will create a real functioning game using Python. The focus of this course is to teach students more complex uses of loops, conditional statements, functions, methods, and algorithms. Students will be introduced to object-oriented design, encapsulation, decomposition, and inheritance.  <a href="{% url 'intermediate' %}">learn more...</a></td>
+        <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
+        <td>80 minutes </td>
+        <td>18</td>
+        <td>$648</td>
+        <td>$36</td>
+      </tr>
+    </tbody>
+  </table>
+      <br>
+  <table class="table">
+    <h5>Raspberry Pi: Internet Of Things</h5>
+    <thead>
+      <tr>
+        <th>Course Description</th>
+        <th>Days/Time</th>
+        <th>Class Length per week</th>
+        <th>Weeks</th>
+        <th>Total Fee</th>
+        <th>Cost Per Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td> <p>Want to learn how to program a robot? Then, Raspberry Pi is a great course for you!.</p>
+              <p>Our Internet Of Things course is designed to teach kids how to program and manipulate... everything! Well, everything that can be programmed...  <a href="{% url 'rasppi' %}">learn more...</a></p></td>
+        <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
+        <td>80 minutes </td>
+        <td>18</td>
+        <td>$504</td>
+        <td>$28</td>
+      </tr>
+    </tbody>
+  </table>
+       <br>
+  <table class="table">
+    <h5>Web Design: JavaScript + HTML5 + CSS3</h5>
+    <thead>
+      <tr>
+        <th>Course Description</th>
+        <th>Days/Time</th>
+        <th>Class Length per week</th>
+        <th>Weeks</th>
+        <th>Total Fee</th>
+        <th>Cost Per Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p>Want to learn how to program a robot? Then, Raspberry Pi is a great course for you!.</p>
+          <p>Our Internet Of Things course is designed to teach kids how to program and manipulate... everything! Well, everything that can be programmed...  <a href="{% url 'webdesign' %}">learn more...</a></p>
+        </td>
+        <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
+        <td>80 minutes </td>
+        <td>18</td>
+        <td>$504</td>
+        <td>$28</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </section>
+
+{% endblock %}

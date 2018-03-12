@@ -1,0 +1,65 @@
+{% extends 'webapp/homepage.html' %}
+{% block title %}<title>Raspberry Pi</title>{% endblock %}
+{% block body_block %}
+{% load static %}
+
+  <main role="main">
+    <div class="container">
+      <img width="100%" height="800" src="{% static 'webapp/img/IoT_image.jpg' %}"/>
+      <!--<img width="1000" height="800" src="{% static 'webapp/img/rasppi_logo.png' %}"/>-->
+        <div style="position: absolute; width:auto; top:100px; background-color:grey; background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+        background: rgba(204, 204, 204, 0.5); padding: 5px 50px 5px 50px;">
+          <div>
+            <h1 style="color:#D21F3C;"><b>Raspberry Pi</b></h1>
+            <p style="text-align:right;"><a class="btn btn-primary btn-lg" href="/webapp/contact/" role="button">Sign up for a free trail &raquo;</a></p>
+          </div>
+        </div>
+    </div>
+
+  <section>
+    <!--overview of course -->
+    <div class="container begin-p">
+      <div class="row">
+        <div class="col-9">
+      <h3>Learn to automate the world... with Raspberry Pi!</h3>
+      <br>
+      <br>
+      <p>
+        Want to learn how to program a robot?
+        Then, Raspberry Pi is a great course for you!.
+      </p>
+      <p>
+        Our <b>Internet Of Things</b> course is designed to teach kids how to program and manipulate... everything! Well, everything
+        that can be programmed...
+      </p>
+      <p><img style="float:right;width:200px;" src="{% static 'webapp/img/rasppi_logo.png' %}"/>
+        In a world where many jobs are replaced by automation, understanding how these machines work and how to program
+        and repair them is already an important job.
+        If you've ever wanted to create an app that can operate your smart phone, TV, PS4/XBox, lights,
+        car, fridge, watch, and 1000's of other devices, then ask your parents to <a href="/webapp/contact/">sign you up</a> for this fun and challenging course.
+      </p>
+      <p>
+        Guided by our instructors, students will create various software programs to utilize robotics to solve real world problems.
+      </p>
+        </div>
+        <div style="background: #F0FFF0; font-size:.75em;" class="col-3">
+          <br>
+          <h3>Our Guarantee</h3>
+          <br>
+          <i class="fas fa-graduation-cap"></i><b>  4 To 1 Ratio</b>
+          <p>To ensure our students receive the best results, each class has a maximum of 4 students for each instructor.</p>
+          <br><br>
+          <i class="fas fa-child"></i> <b>  FREE Evaluation Class</b>
+          <p>We judge our success based on your child's success. Our free evaluation helps us recommend the right course
+          that builds your child's confidence.</p>
+          <br><br>
+          <i class="fas fa-handshake"></i> <b>  2 Class Guarantee</b>
+          <p>We are confident your child will learn and have fun! That's why we offer a full refund if you wish to
+          withdraw your child from the course after the second class.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  </main>
+{% endblock %}

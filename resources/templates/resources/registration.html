@@ -1,0 +1,85 @@
+{% extends 'resources/resources.html' %}
+{% block title %}<title>Registration</title> {% endblock %}
+{% block body_block %}
+{% load static %}
+<style>
+    p{
+    font-size:1.5em;
+    width:100%;
+    }
+</style>
+
+<main role="main">
+    <div class="container">
+      <img width="100%" height="400" src="{% static 'resources/img/register_banner.jpeg' %}"/>
+    </div>
+    <section>
+        <div class="container">
+            <p>
+                <b style="font-size:1em;">IMPORTANT</b>: Please contact us before you register for a course.
+                You can reach us @ 1-888-555-5555 or <a href="#evaluation">via email</a> to setup a
+                <i style="color:gold;font-weight:bold">FREE EVALUATION</i>.
+            </p>
+            <p>
+                Our goal is to make sure your child has fun, builds confidence, and receives a high quality
+                educational experience.
+                Spending the extra time on the evaluation helps us ensure your child is enrolled in the
+                right course with other children of similar age and abilities.
+            </p>
+            <p>Please contact us @ 1-888-555-5555 or <a href="#evaluation">via email</a> to setup a
+                <i style="color:gold;font-weight:bold">FREE EVALUATION</i>. </p>
+        </div>
+        <div class="container">
+            <p>
+                Once you have completed the free evaluation, we will contact you and recommend the ideal course
+                for your child and send you a link to complete the appropriate registration forms.
+            </p>
+            <p>
+                If you are a returning student, we look forward to seeing you again!
+                Please complete the form below, and we will notify the course options available for the
+                current and upcoming semesters.
+            </p>
+        </div>
+    </section>
+    <br>
+    <!-- form -->
+    <div style="font-size:1.5em;" class="container">
+        <hr>
+        <p style="text-align:center;"><a style="font-size:1.5em; " name="evaluation">Contact Us</a></p>
+        <form action="{%url 'registration'%}" method="post">
+            {% csrf_token %}
+            <label>Email:</label>
+            <br>
+            {{ form.email }} <label>cc:</label>
+            {{ form.cc_myself}} <br>
+
+            <label>Name:</label>
+            <br>
+            {{ form.name }}<br>
+
+            <label>Phone:</label>
+            <br>
+            {{ form.phone }} <br>
+
+            <label>Location:</label>
+            <br>
+            {{ form.location }} <br>
+
+            <label>Status:</label>
+            <br>
+            {{ form.status }} <br>
+
+            <label>Age:</label>
+            <br>
+            {{ form.age }} <br>
+
+            <label>Questions/Comments:</label>
+            <br>
+            {{ form.questions }} <br>
+
+            <input class="btn btn-info btn-block" type="submit" value="Submit"/>
+        </form>
+    </div>
+</main>
+
+{% endblock %}

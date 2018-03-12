@@ -1,0 +1,72 @@
+{% extends 'webapp/homepage.html' %}
+{% block title %}<title>Web Design</title>{% endblock %}
+{% block body_block %}
+{% load static %}
+
+<main role="main">
+
+  <div class="container">
+    <img width="100%" height="800" src="{% static 'webapp/img/webdesign_logo.jpeg' %}"/>
+    <!--<img width="1000" height="800" src="{% static 'webapp/img/rasppi_logo.png' %}"/> -->
+      <div style="position: absolute; width:auto; top:100px; background-color:grey; background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+      background: rgba(204, 204, 204, 0.5); padding: 5px 50px 5px 50px;">
+        <div>
+          <h1 style="color:#D21F3C;"><b>Web Design</b></h1>
+          <p style="text-align:right;"><a class="btn btn-primary btn-lg" href="/webapp/contact/" role="button">Sign up for a free trail &raquo;</a></p>
+        </div>
+      </div>
+  </div>
+
+  <section>
+    <!--overview of course -->
+    <div class="container begin-p">
+      <div class="row">
+        <div class="col-9">
+          <h4>Prerequisite: Good Typing Skills</h4>
+          <h4>Ages: 8-11 (Level 1) <b>|</b> 12-15 (Level 2)</h4>
+          <h4>Learn the three core technologies powering the World Wide Web: <b>HTML5, CSS3, and JavaScript</b>.</h4>
+      <br>
+      <br>
+      <p>
+       With all the website template companies (like WIX), why learn website design yourself?
+      </p>
+      <p>
+        Using a web template is a great idea for basic, static, websites. However, if you want to add custom features and dynamic
+        content to your site, then you'll need to how to create, design and implement that content. Our web site design
+        course will teach you these critical development skills.
+      </p>
+      <p>
+        In our fast-paced and competitive world, the ability to quickly deploy and update web content such as a blog,
+        personal branding, advertising a product/service, offers those with limited resources the opportunity to
+        compete against anyone.
+      </p>
+      <p>
+        Guided by our instructors, the focus of this 18 week course is to teach students to use JavaScript to create
+        a dynamic website. Students will learn the basics of HTML5 and CSS3. Basic HTML5 and CSS3 templates are provided
+        during the actual development of a website.
+      </p>
+
+    </div>
+    <div style="background: #F0FFF0; font-size:.75em;" class="col-3">
+       <br>
+       <h3>Our Guarantee</h3>
+       <br>
+       <i class="fas fa-graduation-cap"></i><b>  8 To 1 Ratio</b>
+       <p>To ensure our students receive the best results, each class has a maximum of 4 students for each instructor.</p>
+       <br><br>
+       <i class="fas fa-child"></i> <b>  FREE Evaluation Class</b>
+       <p>We judge our success based on your child's success. Our free evaluation helps us recommend the right course
+       that builds your child's confidence.</p>
+       <br><br>
+       <i class="fas fa-handshake"></i> <b>  2 Class Guarantee</b>
+       <p>We are confident your child will learn and have fun! That's why we offer a full refund if you wish to
+       withdraw your child from the course after the second class.</p>
+    </div>
+    </div>
+    </div>
+  </section>
+  <br>
+
+</main>
+
+{% endblock %}
