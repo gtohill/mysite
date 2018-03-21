@@ -1,0 +1,71 @@
+{% extends 'resources/resources.html' %}
+{% block title %}<title>Orientation</title> {% endblock %}
+
+{% block body_block %}
+{% load static %}
+
+<!-- location details -->>
+ <style>
+    p{
+    font-size:1.5em;
+    width:100%;
+    }
+</style>
+
+<main role="main">
+    <div class="container">
+      <img width="100%" height="400" src="{% static 'resources/img/orientation.jpg' %}"/>
+    </div>
+    <section>
+        <div class="container">
+            <p>
+                Thank you for your interest in attending our <b>summer camp orientation</b> class.
+                Please compete the quick registration form below.  Registration is not required to attend. However,
+                completing the form helps us make sure we have enough space to accommodate everyone.
+            </p>
+
+            <p>
+                Date: April XX, 2018
+            </p>
+            <p>
+                Time: 9am - 10:30am
+            </p>
+            <p>
+                Location: Masonville Public Library
+            </p>
+            <p>
+                Address: 30 North Center Road, London, ON, N5X 3W1
+            </p>
+            <div class="col">
+               <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=London+Public+Library,+Masonville+Branch,+North+Centre+Road,+London,+ON,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlecode" rel="nofollow" href="https://sucks.hosting" id="grabmap-authorization">Hosting Sucks</a><style>#embedmap-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <!-- form -->
+    <div style="font-size:1.5em;" class="container">
+        <hr>
+        <p style="text-align:center;"><a style="font-size:1.5em; " name="evaluation">Register</a></p>
+        <form action="{%url 'orientation'%}" method="post">
+            {% csrf_token %}
+            <label>Email:</label>
+            <br>
+            {{ form.email }} <label>cc:</label>
+            {{ form.cc_myself}} <br>
+
+            <label>Name:</label>
+            <br>
+            {{ form.name }}<br>
+
+            <label>Questions/Comments:</label>
+            <br>
+            {{ form.questions }} <br>
+
+            <input class="btn btn-info btn-block" type="submit" value="Submit"/>
+        </form>
+    </div>
+</main>
+
+
+{% endblock %}

@@ -88,11 +88,5 @@ def webdesign(request):
 
 
 def homepage(request):
-    user = User.objects.get(pk=1)
-    output = "User Name is "+str(user)
     template = loader.get_template('webapp/homepage.html')
-
-    context = {
-        'output': output,
-    }
-    return HttpResponse(template.render(context, request))
+    return HttpResponse(template.render())

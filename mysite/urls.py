@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from webapp.views import homepage
 from resources.views import resources
+from resources.views import orientation
 
 
 urlpatterns = [
     path('', homepage),
+    path('orientation/', orientation),
     path('resources/', resources),
     path('webapp/', include('webapp.urls')),
     path('resources/', include('resources.urls')),
