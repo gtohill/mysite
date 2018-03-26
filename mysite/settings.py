@@ -25,7 +25,7 @@ SECRET_KEY = 'ud&txgpqc1^i_+x_69*+dy)t&%7c&5o--4wvro8us+36o5(i7u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'www.createincode.com']
 
 
 EMAIL_USE_TLS = True
