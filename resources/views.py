@@ -110,11 +110,3 @@ def orientation(request):
         return render(request, 'resources/orientation.html', {'form': form})
 
 
-def file_view(request):
-
-    filename = '/home/gtohill/django-apps/mysite/resources/static/resources/forms/registration_form.pdf'
-    data = open(filename, 'rb').read()
-    response = HttpResponse(data, content_type='application/vnd.pdf')
-    response['Content-Length'] = os.path.getsize(filename)
-
-    return response
