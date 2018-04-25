@@ -90,3 +90,12 @@ def webdesign(request):
 def homepage(request):
     template = loader.get_template('webapp/homepage.html')
     return HttpResponse(template.render())
+
+
+def google0a519d9b267460d1(request):
+    return HttpResponse("google-site-verification: google0a519d9b267460d1.html")
+
+
+def sitemap(request):
+    template = loader.get_template('webapp/sitemap.xml')
+    return HttpResponse(template.render())

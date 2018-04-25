@@ -1,88 +1,7 @@
-<!doctype html>
-<html lang="en">
+{% extends 'webapp/homepage.html' %}
 {% load static %}
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="{% static 'webapp/img/create_logo1.png' %}">
-
-    {% block title %}<title>Beginner Course</title>{% endblock %}
-
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'webapp/stylesheet/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="{% static 'webapp/stylesheet/jumbotron.css' %}" rel="stylesheet">
-    <link href="{% static 'webapp/stylesheet/beginner.css' %}" rel="stylesheet">
-     <link type="text/css" rel="stylesheet" href="{% static 'webapp/stylesheet/navbar.css' %}"  />
-  </head>
-
-  <body>
-
-<header>
-      <nav  class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-       <a class="navbar-brand spacing" href="/"><img border="0" alt="W3Schools" src="{% static 'webapp/img/cut_logo1.png' %}" width="100" height="50"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse nav-right" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto spacing">
-          <li class="nav-item">
-            <a class="nav-link hd-fnt-sz active" href="/">About</a>
-          </li>
-          <li class="nav-item spacing">
-            <a class="nav-link hd-fnt-sz" href="/webapp/parents">Parents <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown spacing hd-fnt-sz">
-            <a class="nav-link dropdown-toggle" href="/webapp/courses/" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown03">
-              <a class="dropdown-item" href="/webapp/courses/">Course Summaries</a>
-              <a class="dropdown-item" href="/webapp/beginner/">Beginner</a>
-              <a class="dropdown-item" href="/webapp/novice/">Novice</a>
-              <a class="dropdown-item" href="/webapp/intermediate/">Intermediate</a>
-              <a class="dropdown-item" href="/webapp/rasppi/">Raspberry Pi</a>
-              <a class="dropdown-item" href="/webapp/webdesign/">Web App Development</a>
-
-            </div>
-          </li>
-          <li class="nav-item spacing">
-            <a class="nav-link hd-fnt-sz" href="/webapp/contact">Free Trial</a>
-          </li>
-          <li class="nav-item dropdown spacing hd-fnt-sz">
-            <a class="nav-link dropdown-toggle" href="/resources/locations/" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown03">
-              <a class="dropdown-item" href="/resources/waterloo/">Waterloo</a>
-              <a class="dropdown-item" href="/resources/mississauga/">Mississauga</a>
-              <a class="dropdown-item" href="/resources/london/">London</a>
-            </div>
-          </li>
-
-          <li class="nav-item spacing">
-            <a class="nav-link hd-fnt-sz" href="/resources/registration">Registration</a>
-          </li>
-          <li class="nav-item spacing">
-            <a class="nav-link hd-fnt-sz" href="/webapp/contact">Contact</a>
-          </li>
-          <li class="nav-item spacing">
-            <a class="nav-link hd-fnt-sz" href="/resources/faqs">FAQ's</a>
-          </li>
-          <li class="nav-item spacing">
-            <a style="color:gold;" class="nav-link hd-fnt-sz"><i class="fas fa-phone"></i>   <b>1-800-555-5555</b></a>
-          </li>
-          <li class="nav-item spacing">
-            <a style="color:gold;" class="nav-link hd-fnt-sz" href="/webapp/contact"><i class="fas fa-envelope"></i></i>   <b>Email Us</b></a>
-          </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark my-2 my-sm-2 mr-5" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    </header>
-
+{% block title %}<title>Beginner Coding - Create In Code</title>{% endblock %}
+{% block body_block %}
 
   <main role="main">
     <div class="container">
@@ -177,24 +96,4 @@
     <br>
   </section>
 
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2017-2018 Create In Code, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="{% static 'webapp/javascript/jquery-slim.min.js' %}"><\/script>')</script>
-  <script src="{% static 'webapp/javascript.popper.min.js' %}"></script>
-  <script src="{% static 'webapp/javascript/bootstrap.min.js' %}"></script>
-  <script src="{% static 'webapp/javascript/holder.min.js' %}"></script>
-  <!--custom import fonts are awesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</body>
-</html>
+{% endblock %}

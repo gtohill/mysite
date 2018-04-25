@@ -10,4 +10,5 @@ urlpatterns = [
     path('registration/', views.registration, name='registration'),
     path('thank_you/', views.thank_you, name='thank_you'),
     path('orientation/', views.orientation, name='orientation'),
+    path('file_view/', views.file_view, name='file_view'),
 ]

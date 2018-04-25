@@ -1,5 +1,5 @@
 {% extends 'resources/resources.html' %}
-{% block title %}<title>Orientation</title> {% endblock %}
+{% block title %}<title>Information Session</title> {% endblock %}
 
 {% block body_block %}
 {% load static %}
@@ -14,12 +14,12 @@
 
 <main role="main">
     <div class="container">
-      <img width="100%" height="400" src="{% static 'resources/img/orientation.jpg' %}"/>
+      <img width="100%" height="400" src="{% static 'resources/img/infosession.jpg' %}"/>
     </div>
     <section>
         <div class="container">
             <p>
-                Thank you for your interest in attending our <b>summer camp orientation</b> class.
+                Thank you for your interest in attending our <b>FREE summer camp information session</b>.
                 Please compete the quick registration form below.  Registration is not required to attend; however,
                 completing the form helps us make sure we have enough space to accommodate everyone. Looking forward
                 to meeting you!
@@ -29,7 +29,7 @@
                 Date: April 21, 2018
             </p>
             <p>
-                Time: 2:00pm - 3:30pm
+                Time: 2:00pm - 3:00pm
             </p>
             <p>
                 Location: Stoney Creek Public Library
@@ -53,7 +53,7 @@
             <label>Email:</label>
             <br>
             {{ form.email }} <label>cc:</label>
-            {{ form.cc_myself}} <br>
+            {{ form.confirm}} <br>
 
             <label>Name:</label>
             <br>

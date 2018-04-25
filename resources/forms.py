@@ -26,7 +26,7 @@ class RegistrationForm(forms.Form):
 
 
 class OrientationForm(forms.Form):
-    confirm = forms.BooleanField(required=True)
+    confirm = forms.BooleanField(required=False)
     name = forms.CharField(label='Name', max_length=100)
     email = forms.EmailField()
     questions = forms.CharField(widget=forms.Textarea, label='Questions', max_length=300)

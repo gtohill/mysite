@@ -2,7 +2,11 @@
 {% block title %}<title>Mississauga</title> {% endblock %}
 
 {% block body_block %}
-
+<style>
+  .text{
+  width:40%;
+  }
+</style>
 
 <!-- location details -->>
   <section>
@@ -22,28 +26,38 @@
   </div>
       <br>
   <div class="container">
-    <h2>Courses Offered</h2>
+    <h2>Camps Offered</h2>
 
     <table class="table">
-        <h5>Beginners Course</h5>
+        <h5>Beginners</h5>
         <thead>
           <tr>
             <th>Course Description</th>
-            <th>Days/Time</th>
-            <th>Class Length per week</th>
-            <th>Weeks</th>
-            <th>Total Fee</th>
-            <th>Cost Per Class</th>
+            <th>Days</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Fee</th>
+            <th>Start Dates</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Guided by our instructors, students will not only create a real functioning game from "Scratch", they'll practice the fundamental coding concepts required in any language, learn how to think logically, and have fun while doing it. <a href="{% url 'beginner' %}">learn more...</a></td>
-            <td>Thursdays (3:30pm-7pm) and Saturdays (9am-3pm) </td>
-            <td>80 minutes </td>
-            <td>18</td>
-            <td>$360</td>
-            <td>$20</td>
+            <td class="text">Guided by our instructors, students will not only create a real functioning game from "Scratch", they'll practice the fundamental coding concepts required in any language, learn how to think logically, and have fun while doing it. <a href="{% url 'beginner' %}">learn more...</a></td>
+            <td>Monday to Friday</td>
+            <td>9am to 12pm</td>
+            <td>1 week</td>
+            <td>$200</td>
+            <td>
+                July 3  - July 6, 2018<br>
+                July 9  - July 13, 2018<br>
+                July 16 - July 20, 2018<br>
+                July 23 - July 27, 2018<br>
+                July 30 - Aug 3, 2018<br>
+                Aug 6   - Aug 10, 2018<br>
+                Aug 13  - Aug 17, 2018<br>
+                Aug 20  - Aug 24, 2018<br>
+            </td>
+
           </tr>
         </tbody>
     </table>
@@ -53,21 +67,30 @@
         <thead>
           <tr>
             <th>Course Description</th>
-            <th>Days/Time</th>
-            <th>Class Length per week</th>
-            <th>Weeks</th>
-            <th>Total Fee</th>
-            <th>Cost Per Class</th>
+            <th>Days</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Fee</th>
+            <th>Start Dates</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>In the Novice course, students will create a real functioning game using Python. The focus of this course is to teach students more complex uses of loops, conditional statements, functions, methods, and algorithms. Students will be introduced to object-oriented design, encapsulation, decomposition, and inheritance.  <a href="{% url 'novice' %}">learn more...</a></td>
-            <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
-            <td>80 minutes </td>
-            <td>18</td>
-            <td>$504</td>
-            <td>$28</td>
+            <td class="text">In the Novice course, students will create a real functioning game using Python. The focus of this course is to teach students more complex uses of loops, conditional statements, functions, methods, and algorithms. Students will be introduced to object-oriented design, encapsulation, decomposition, and inheritance.  <a href="{% url 'novice' %}">learn more...</a></td>
+            <td>Monday to Friday</td>
+            <td>9am to 12pm</td>
+            <td>2 weeks</td>
+            <td>$480</td>
+            <td>
+                July 3  - July 6, 2018<br>
+                July 9  - July 13, 2018<br>
+                July 16 - July 20, 2018<br>
+                July 23 - July 27, 2018<br>
+                July 30 - Aug 3, 2018<br>
+                Aug 6   - Aug 10, 2018<br>
+                Aug 13  - Aug 17, 2018<br>
+                Aug 20  - Aug 24, 2018<br>
+            </td>
           </tr>
         </tbody>
     </table>
@@ -77,21 +100,34 @@
     <thead>
       <tr>
         <th>Course Description</th>
-        <th>Days/Time</th>
-        <th>Class Length per week</th>
-        <th>Weeks</th>
-        <th>Total Fee</th>
-        <th>Cost Per Class</th>
+        <th>Days</th>
+        <th>Time</th>
+        <th>Duration</th>
+        <th>Fee</th>
+        <th>Start Dates</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>In the Intermediate course, students will create a real functioning game using Python. The focus of this course is to teach students more complex uses of loops, conditional statements, functions, methods, and algorithms. Students will be introduced to object-oriented design, encapsulation, decomposition, and inheritance.  <a href="{% url 'intermediate' %}">learn more...</a></td>
-        <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
-        <td>80 minutes </td>
-        <td>18</td>
-        <td>$648</td>
-        <td>$36</td>
+        <td class="text">
+          The intermediate course builds on the concepts learned in the novice course. The Intermediate course integrates
+          more advanced computational thinking to solve programming challenges. We will develop more complex games with a focus
+          on game physics, basic Artificial Intelligence (Enemy AI), object oriented design, data structures, and linear
+          algebra.   <a href="{% url 'intermediate' %}">learn more...</a></td>
+        <td>Monday to Friday</td>
+        <td>9am to 12pm</td>
+        <td>2 weeks</td>
+        <td>$640</td>
+        <td>
+          July 3  - July 6, 2018<br>
+          July 9  - July 13, 2018<br>
+          July 16 - July 20, 2018<br>
+          July 23 - July 27, 2018<br>
+          July 30 - Aug 3, 2018<br>
+          Aug 6   - Aug 10, 2018<br>
+          Aug 13  - Aug 17, 2018<br>
+          Aug 20  - Aug 24, 2018<br>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -101,22 +137,31 @@
     <thead>
       <tr>
         <th>Course Description</th>
-        <th>Days/Time</th>
-        <th>Class Length per week</th>
-        <th>Weeks</th>
-        <th>Total Fee</th>
-        <th>Cost Per Class</th>
+        <th>Days</th>
+        <th>Time</th>
+        <th>Duration</th>
+        <th>Fee</th>
+        <th>Start Dates</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-          <td> <p>Want to learn how to program a robot? Then, Raspberry Pi is a great course for you!.</p>
+          <td class="text"> <p>Want to learn how to program a robot? Then, Raspberry Pi is a great course for you!.</p>
               <p>Our Internet Of Things course is designed to teach kids how to program and manipulate... everything! Well, everything that can be programmed...  <a href="{% url 'rasppi' %}">learn more...</a></p></td>
-        <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
-        <td>80 minutes </td>
-        <td>18</td>
-        <td>$504</td>
-        <td>$28</td>
+        <td>Monday to Friday</td>
+        <td>9am to 12pm</td>
+        <td>2 weeks</td>
+        <td>$480</td>
+        <td>
+          July 3  - July 6, 2018<br>
+          July 9  - July 13, 2018<br>
+          July 16 - July 20, 2018<br>
+          July 23 - July 27, 2018<br>
+          July 30 - Aug 3, 2018<br>
+          Aug 6   - Aug 10, 2018<br>
+          Aug 13  - Aug 17, 2018<br>
+          Aug 20  - Aug 24, 2018<br>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -126,28 +171,37 @@
     <thead>
       <tr>
         <th>Course Description</th>
-        <th>Days/Time</th>
-        <th>Class Length per week</th>
-        <th>Weeks</th>
-        <th>Total Fee</th>
-        <th>Cost Per Class</th>
+        <th>Days</th>
+        <th>Time</th>
+        <th>Duration</th>
+        <th>Fee</th>
+        <th>Start Dates</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>
-          <p>Want to learn how to program a robot? Then, Raspberry Pi is a great course for you!.</p>
-          <p>Our Internet Of Things course is designed to teach kids how to program and manipulate... everything! Well, everything that can be programmed...  <a href="{% url 'webdesign' %}">learn more...</a></p>
+        <td class="text">
+          <p>Why pay someone thousands of dollars to make a website for you? Students will learn to create a
+             professional looking website using jJavaScript, HTML5 and CSS3.</p>
+          <a href="{% url 'webdesign' %}">learn more...</a></p>
         </td>
-        <td>Thursdays (5pm-9pm) and Saturdays (9am-3pm) </td>
-        <td>80 minutes </td>
-        <td>18</td>
-        <td>$504</td>
-        <td>$28</td>
+        <td>Monday to Friday</td>
+        <td>9am to 12pm</td>
+        <td>2 weeks</td>
+        <td>$500</td>
+        <td>
+          July 3  - July 6, 2018<br>
+          July 9  - July 13, 2018<br>
+          July 16 - July 20, 2018<br>
+          July 23 - July 27, 2018<br>
+          July 30 - Aug 3, 2018<br>
+          Aug 6   - Aug 10, 2018<br>
+          Aug 13  - Aug 17, 2018<br>
+          Aug 20  - Aug 24, 2018<br>
+        </td>
       </tr>
     </tbody>
   </table>
   </div>
   </section>
-
 {% endblock %}

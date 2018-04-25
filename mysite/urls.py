@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from webapp.views import homepage
+from webapp.views import homepage, google0a519d9b267460d1, sitemap
 from resources.views import resources
 from resources.views import orientation
 
 
 urlpatterns = [
     path('', homepage),
+    path('google0a519d9b267460d1.html/', google0a519d9b267460d1),
+    path('sitemap.xml', sitemap),
     path('orientation/', orientation),
     path('resources/', resources),
     path('webapp/', include('webapp.urls')),

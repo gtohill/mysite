@@ -11,31 +11,39 @@
 
         gtag('config', 'UA-115874973-1');
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "109 - 1010 Fanshawe Park Rd E",
+        "addressLocality": "London",
+        "addressRegion": "ON",
+	"postalCode": "N5X 0K9",
+	"addressCountry": "CA"
+      },
+      "name": "Create In Code",
+      "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+      "telephone": "1-519-451-5344",
+	  "url": "https://createincode.com",
+	  "logo":"http://createincode.com/webapp/static/webapp/img/create_logo1.png",
+	  "image":"http://createincode.com/webapp/static/webapp/img/create_logo1.png"
+	 }
+    </script>
+    <meta property="og:title" content="Create In Code - Learn. Create. Code" />
+    <meta property="og:description" content="Create In Code. We teach kids the 4th R in education... Computational Thinking. While developing their computer programming skills using Scratch, Python, C++, JavaScript, HTML, CSS, our students create, learn and have fun." />
 
     <meta charset="utf-8">
-    <meta name="keywords" content="Teens programming computer school at London Ontario."/>
-    <meta name="keywords" content="Coding camp teens and kids at London Ontario."/>
-    <meta name="keywords" content="STEM camp for kids and teens at London Ontario."/>
-    <meta name="keywords" content="Kids programming language London Ontario."/>
-    <meta name="keywords" content="Computer programming classes for kids and teens in London Ontario."/>
-    <meta name="keywords" content="Teens programming computer school at Waterloo Ontario."/>
-    <meta name="keywords" content="Kids programming language Waterloo Ontario."/>
-    <meta name="keywords" content="Coding camp teens and kids at Waterloo Ontario."/>
-    <meta name="keywords" content="STEM camp for kids and teens at Waterloo Ontario."/>
-    <meta name="keywords" content="Computer programming classes for kids and teens in Waterloo Ontario."/>
-    <meta name="keywords" content="Coding camp teens and kids at Mississauga Ontario."/>
-    <meta name="keywords" content="STEM camp for kids and teens at Mississauga Ontario."/>
-    <meta name="keywords" content="Teens programming computer school at Mississauga Ontario."/>
-    <meta name="keywords" content="Kids programming language Mississauga Ontario."/>
-    <meta name="keywords" content="Computer programming classes for kids and teens in Mississauga Ontario."/>
-
+    <meta name="msvalidate.01" content="50A620ACFC8CE48CA074BBA52AC35660" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="coding, kids, computer programming, Scratch, Python, Pygame, Arcade, kids coding languages, computer science, HTML,CSS,XML,JavaScript">
-    <meta name="description" content="-">
+    <meta name="description" content="Create In Code. Kids and Teens learn a real programming language to create a video game,
+    build a website, or program a robot. Our students learn to code, create in code, and have fun coding!">
     <meta name="author" content="">
     <link rel="icon" href="{% static 'webapp/img/create_logo1.png' %}">
 
-    {% block title %}<title>Create In Code</title>{% endblock %}
+    {% block title %}<title>Create In Code | Kids and Teens Learn Computer Programming</title>{% endblock %}
 
     <!-- Bootstrap core CSS -->
     <link type="text/css" rel="stylesheet" href="{% static 'webapp/stylesheet/bootstrap.min.css' %}"  />
@@ -65,7 +73,7 @@
       <div class="collapse navbar-collapse nav-right" id="navbarCollapse">
         <ul class="navbar-nav mr-auto spacing">
           <li class="nav-item">
-            <a class="nav-link hd-fnt-sz active" href="/">About</a>
+            <a class="nav-link hd-fnt-sz" href="/">About</a>
           </li>
           <li class="nav-item spacing">
             <a class="nav-link hd-fnt-sz" href="/webapp/parents">Parents <span class="sr-only">(current)</span></a>
@@ -86,11 +94,11 @@
             <a class="nav-link hd-fnt-sz" href="/webapp/contact">Free Trial</a>
           </li>
           <li class="nav-item dropdown spacing hd-fnt-sz">
-            <a class="nav-link dropdown-toggle" href="/resources/locations/" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
+            <a class="nav-link dropdown-toggle" href="/resources/locations/" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Summer Camps</a>
             <div class="dropdown-menu" aria-labelledby="dropdown03">
-              <a class="dropdown-item" href="/resources/waterloo/">Waterloo</a>
-              <a class="dropdown-item" href="/resources/mississauga/">Mississauga</a>
               <a class="dropdown-item" href="/resources/london/">London</a>
+              <a class="dropdown-item" href="/resources/mississauga/">Mississauga</a>
+              <a class="dropdown-item" href="/resources/waterloo/">Waterloo</a>
             </div>
           </li>
 
@@ -98,22 +106,15 @@
             <a class="nav-link hd-fnt-sz" href="/resources/registration">Registration</a>
           </li>
           <li class="nav-item spacing">
-            <a class="nav-link hd-fnt-sz" href="/webapp/contact">Contact</a>
-          </li>
-          <li class="nav-item spacing">
             <a class="nav-link hd-fnt-sz" href="/resources/faqs">FAQ's</a>
           </li>
           <li class="nav-item spacing">
-            <a style="color:gold;" class="nav-link hd-fnt-sz"><i class="fas fa-phone"></i>   <b>519-451-5344</b></a>
+            <a style="color:gold;" class="nav-link hd-fnt-sz"><i class="fas fa-phone"></i> <b>519-451-5344</b></a>
           </li>
           <li class="nav-item spacing">
             <a style="color:gold;" class="nav-link hd-fnt-sz" href="/webapp/contact"><i class="fas fa-envelope"></i></i>   <b>Email Us</b></a>
           </li>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark my-2 my-sm-2 mr-5" type="submit">Search</button>
-        </form>
       </div>
     </nav>
     </header>
@@ -127,19 +128,19 @@
           <li data-target="#myCarousel" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="{% static 'webapp/img/comp_thinking.jpg' %}" alt="First slide">
+           <div class="carousel-item active">
+            <img class="first-slide" src="{% static 'webapp/img/comp_thinking.jpg' %}" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-primary" href="/webapp/parents/" role="button">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" href="/webapp/parents/" role="button">Learn To Code</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="{% static 'webapp/img/courses_banner.png' %}" alt="Second slide">
+            <img class="second-slide" src="{% static 'webapp/img/courses_banner.png' %}" alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-primary" href="/webapp/courses/" role="button">Start Learning!</a></p>
+                <p><a class="btn btn-lg btn-primary" href="/webapp/courses/" role="button">Learn To Code</a></p>
               </div>
             </div>
           </div>
@@ -164,7 +165,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="{% static 'webapp/img/parents.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{% static 'webapp/img/parents.jpg' %}" alt="picture of parent reading tablet" width="140" height="140">
             <h2>For Parents</h2>
             <p>Research has demonstrated that learning to code at a young age helps develop analytical thinking and
               fosters problem-solving techniques — skills that are important in order to advance in science, technology,
@@ -174,37 +175,39 @@
               The core purpose to all our courses is to advance your child's <b>computational thinking</b>.
             </p>
             <p>
-              Ask your child if he/she is interested in a <b>free trial class</b>.
+              Ask your child if he/she is interested in a <b>free coding class</b>.
             </p>
-            <p><a class="btn btn-secondary" href="/webapp/parents/" role="button">Learn more &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="/webapp/parents/" role="button">Learn To Code &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="{% static 'webapp/img/teens_learning.jpeg' %}" alt="Generic placeholder image" width="140" height="140">
-            <h2>For Kids</h2>
-            <p>Want to learn <b>how to make your own video games</b>? Whether you've never typed a line of code
+            <img class="rounded-circle" src="{% static 'webapp/img/teens_learning.jpeg' %}" alt="image of teen learning to code" width="140" height="140">
+            <h2>Courses</h2>
+            <p>Want to learn <b>how to make your own video games</b>? We offer coding classes from beginners to advance.
+              Whether you've never typed a line of code
               or are familiar with object oriented design, we have a course for you.
+              We'll teach you how to create a video, website, or program a robot using industry standard computer programming
+              language.
               Each course is designed to be <b>fun</b> while you learn how to code!
             </p>
             <p>
-              Depending on your experience, you'll learn to code using Scratch, SNAP, Python, Java, or C++.
+              Depending on experience, kids will learn computer programming using Scratch, SNAP, Python, Java, or C++.
             </p>
             <p>
               <b>Ask your parents</b> if you can attend our <b>free trial class</b>!
             </p>
-            <p><a class="btn btn-secondary" href="/webapp/courses/" role="button">Learn More &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="/webapp/courses/" role="button">Start Coding &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="{% static 'webapp/img/courses_home.jpg' %}" alt="Generic placeholder image" width="140" height="140">
-            <h2>Courses</h2>
-            <p>All our courses have 4:1 ratio of students to teacher. This ratio allows us to excelerate your child's
-              learning experience in a collaborative environment. During the school year we offer
-              weekday evening and weekend courses. During the summer we offer weekly daytime camps.
-              <b>Free assessment</b>
+            <img class="rounded-circle" src="{% static 'webapp/img/happy_kid.jpg' %}" alt="Courses that teach computer programming" width="140" height="140">
+            <h2>Summer Camps</h2>
+            <p>Keep your child's mind sharpe and developing during the summer months.
+              To ensure a high quality outcome, all our camps have 6:1 ratio of students to instructor.
+              Our camps teach kids computer programming from ages 8 to 15. From beginner to advance, our coding camps
+              build confidence, create friendships, while having fun. <a href="/webapp/contact/">Learn to code</a>
             </p>
-            <p><a class="btn btn-secondary" href="/webapp/courses/" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="/webapp/courses/" role="button">Summer of Code &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
-
 
         <!-- START THE FEATURETTES -->
 
@@ -217,12 +220,12 @@
               <b>Every kid is unique. Every kid has the potential to do great things.
               Some kids learn faster than others.
               To accommodate for different learning styles, our ratio of student to instructor is 4:1.
-              Our small class size ensures that each student learns at a pace that is challenging and fun.
+              Our small class size ensures that each student learns to code at a pace that is challenging and fun.
                 Our commitment is to help your child get one step closer to achieving his/her potential.</b>
             </p>
           </div>
           <div class="col-md-5">
-            <img style="border-radius:20px;" class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/accomplishment.jpg' %}" alt="Generic placeholder image">
+            <img style="border-radius:20px;" class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/accomplishment.jpg' %}" alt="child jumping across a gap">
           </div>
         </div>
 
@@ -240,7 +243,7 @@
               </b></p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/kolb_learning.png' %}" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/kolb_learning.png' %}" alt="how we teach kids to code">
           </div>
         </div>
 
@@ -270,7 +273,7 @@
             </p>
           </div>
           <div class="col-md-5">
-            <img style="border-radius:20px;" class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/gary_close.png' %}" alt="Generic placeholder image">
+            <img style="border-radius:20px;" class="featurette-image img-fluid mx-auto" src="{% static 'webapp/img/gary_close.png' %}" alt="president's personal picture">
           </div>
         </div>
 
